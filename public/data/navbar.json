@@ -1,0 +1,47 @@
+{
+  "logo": {
+    "src": "/images/LOGO.png"
+  },
+  "links": [
+    { "name": "About", "href": "/about" },
+    {
+      "name": "Admissions",
+      "submenu": [
+        { "title": "Online Admission", "href": "/admissions#how-to-apply" },
+        { "title": "Tuition & Fees", "href": "/admissions#tuition-fees" },
+        { "title": "Scholarships", "href": "/admissions#scholarships" },
+        {
+          "title": "International Students",
+          "href": "/admissions#international-students"
+        },
+        { "title": "Admission Policy", "href": "/admissions#admission-policy" },
+        {
+          "title": "Registration Policy",
+          "href": "/admissions#registration-policy"
+        }
+      ]
+    },
+    {
+      "name": "Academics",
+      "submenu": [
+        { "title": "All Programs", "href": "/programs" },
+        { "title": "Academic Calendar", "href": "/academics#calendar" },
+        { "title": "Academic Systems", "href": "/academics#systems" },
+        { "title": "Faculty", "href": "/academics#faculty" },
+        { "title": "Student Life", "href": "/academics#student-life" }
+      ]
+    },
+    {
+      "name": "News & Events",
+      "submenu": [
+        { "title": "All News & Events", "href": "/news-events" },
+        { "title": "News", "href": "/news-events?type=news" },
+        { "title": "Events", "href": "/news-events?type=event" }
+      ]
+    },
+    { "name": "Alumni", "href": "/alumni" },
+    { "name": "Notices", "href": "/notices" },
+    { "name": "Contact", "href": "/contact" }
+  ],
+  "cta": { "name": "Apply Now", "href": "/programs" }
+}

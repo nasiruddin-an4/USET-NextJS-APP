@@ -1,0 +1,34 @@
+{
+  "reasons": [
+    {
+      "id": 1,
+      "title": "World-Class Faculty",
+      "description": "Learn from leading experts and researchers in their fields with decades of experience"
+    },
+    {
+      "id": 2,
+      "title": "State-of-the-Art Facilities",
+      "description": "Access cutting-edge laboratories, libraries, and technology resources"
+    },
+    {
+      "id": 3,
+      "title": "Global Community",
+      "description": "Study alongside students from over 100 countries and gain international perspectives"
+    },
+    {
+      "id": 4,
+      "title": "Career Support",
+      "description": "Comprehensive career services including internships, job placement, and alumni network"
+    },
+    {
+      "id": 5,
+      "title": "Innovation Hub",
+      "description": "Participate in groundbreaking research and entrepreneurship initiatives"
+    },
+    {
+      "id": 6,
+      "title": "Holistic Development",
+      "description": "Balance academics with sports, arts, and community engagement opportunities"
+    }
+  ]
+}

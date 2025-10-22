@@ -1,0 +1,57 @@
+{
+  "studentLife": [
+    {
+      "id": 1,
+      "category": "Clubs & Organizations",
+      "title": "Join 100+ Student Clubs",
+      "description": "From academic clubs to cultural organizations, find your community and pursue your passions.",
+      "image": "/placeholder.svg?height=400&width=600",
+      "highlights": [
+        "Academic clubs and societies",
+        "Cultural and international clubs",
+        "Sports and recreation clubs",
+        "Service and volunteer organizations"
+      ]
+    },
+    {
+      "id": 2,
+      "category": "Housing & Dining",
+      "title": "Comfortable Campus Living",
+      "description": "Modern residence halls and diverse dining options create a vibrant residential community.",
+      "image": "/placeholder.svg?height=400&width=600",
+      "highlights": ["Modern residence halls", "Diverse dining options", "24/7 campus security", "Community events"]
+    },
+    {
+      "id": 3,
+      "category": "Sports & Recreation",
+      "title": "Athletic Excellence",
+      "description": "Compete in NCAA Division III sports or enjoy recreational activities and fitness programs.",
+      "image": "/placeholder.svg?height=400&width=600",
+      "highlights": ["NCAA Division III teams", "Intramural sports", "Fitness center", "Outdoor recreation"]
+    },
+    {
+      "id": 4,
+      "category": "Student Support",
+      "title": "Comprehensive Support Services",
+      "description": "Academic advising, counseling, and career services to support your success.",
+      "image": "/placeholder.svg?height=400&width=600",
+      "highlights": ["Academic advising", "Mental health counseling", "Career services", "Disability support"]
+    },
+    {
+      "id": 5,
+      "category": "Events & Activities",
+      "title": "Year-Round Events",
+      "description": "Concerts, lectures, festivals, and social events throughout the academic year.",
+      "image": "/placeholder.svg?height=400&width=600",
+      "highlights": ["Concerts and performances", "Guest lectures", "Cultural festivals", "Social gatherings"]
+    },
+    {
+      "id": 6,
+      "category": "Leadership",
+      "title": "Leadership Development",
+      "description": "Develop leadership skills through student government and leadership programs.",
+      "image": "/placeholder.svg?height=400&width=600",
+      "highlights": ["Student government", "Leadership workshops", "Mentorship programs", "Community service"]
+    }
+  ]
+}
