@@ -2,7 +2,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import favicon from "../public/images/LOGO.png";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -14,6 +13,10 @@ export const metadata = {
   title: "USET - University of Science, Education & Technology",
   description:
     "Empowering students through world-class education and innovation",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon-16x16.png",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -21,7 +24,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         {/* Favicon */}
-        {/* <link rel="icon" href={favicon} sizes="any" /> */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body className={`${inter.variable} antialiased`}>
         <Navbar />

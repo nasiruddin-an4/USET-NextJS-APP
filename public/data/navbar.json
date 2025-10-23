@@ -7,28 +7,22 @@
     {
       "name": "Admissions",
       "submenu": [
-        { "title": "Online Admission", "href": "/admissions#how-to-apply" },
-        { "title": "Tuition & Fees", "href": "/admissions#tuition-fees" },
-        { "title": "Scholarships", "href": "/admissions#scholarships" },
+        { "title": "Online Admission", "href": "/admission" },
+        { "title": "Tuition & Fees", "href": "/Tuition-Fees" },
         {
           "title": "International Students",
-          "href": "/admissions#international-students"
+          "href": "/international-students"
         },
-        { "title": "Admission Policy", "href": "/admissions#admission-policy" },
-        {
-          "title": "Registration Policy",
-          "href": "/admissions#registration-policy"
-        }
+        { "title": "Admission Process", "href": "/admission-policy" }
       ]
     },
     {
       "name": "Academics",
       "submenu": [
         { "title": "All Programs", "href": "/programs" },
-        { "title": "Academic Calendar", "href": "/academics#calendar" },
-        { "title": "Academic Systems", "href": "/academics#systems" },
-        { "title": "Faculty", "href": "/academics#faculty" },
-        { "title": "Student Life", "href": "/academics#student-life" }
+        { "title": "Academic Calendar", "href": "/calendar" },
+        { "title": "Faculty", "href": "/faculty" },
+        { "title": "Student Life", "href": "/student-life" }
       ]
     },
     {

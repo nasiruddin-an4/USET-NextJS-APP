@@ -6,6 +6,7 @@ import Statistics from "@/components/Statistics";
 import WhyChoice from "@/components/WhyChoice";
 import Image from "next/image";
 import Program from "./programs/page";
+import JoinUset from "@/components/JoinUset";
 
 export default function Home() {
   return (
@@ -24,6 +25,9 @@ export default function Home() {
 
       {/* News & Events Section */}
       <NewsEvent />
+
+      {/* Join Uset Section */}
+      <JoinUset />
     </div>
   );
 }

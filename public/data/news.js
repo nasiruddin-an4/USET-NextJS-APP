@@ -55,7 +55,7 @@ export const eventData = [
     description:
       "Annual technology festival featuring project showcases, hackathons, and industry sessions.",
     registrationLink: "#",
-    image: "img/10004.jpg",
+    image: "/images/10002.jpg",
   },
   {
     id: "career-fair-2025",
@@ -66,7 +66,7 @@ export const eventData = [
     description:
       "Connect with over 30 leading employers from various industries. Bring your resume!",
     registrationLink: "#",
-    image: "img/notice.png",
+    image: "/images/10002.jpg",
   },
   {
     id: "entrepreneurship-week-2025",
@@ -77,6 +77,6 @@ export const eventData = [
     description:
       "A week-long program focused on developing entrepreneurial skills and mindset.",
     registrationLink: "#",
-    image: "img/notice.png",
+    image: "/images/10002.jpg",
   },
 ];

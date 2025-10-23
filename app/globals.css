@@ -81,9 +81,9 @@
   --sidebar-accent-foreground: oklch(0.98 0.01 240);
   --sidebar-border: oklch(0.92 0.01 240);
   --sidebar-ring: oklch(0.45 0.25 260);
-  --brand-blue: #0f4695;
-  --brand-red: #da2128;
-  --brand-gray: #1d1d1d;
+  --color-brandblue: #0f4695;
+  --color-brandred: #da2128;
+  --color-brandgray: #3d4a5f;
 }
 
 html {
