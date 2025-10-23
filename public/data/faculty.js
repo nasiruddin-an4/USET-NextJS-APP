@@ -4,34 +4,40 @@ const departments = [
     name: "Department of Computer Science and Engineering",
     faculty: [
       {
+        id: "farhana-akter-badhon",
         name: "Farhana Akter Badhon",
         position: "Lecturer",
-        image: "img/Farhana Akter Badhon.jpg",
+        image: "/images/10001.jpeg",
       },
       {
+        id: "jamim-hossain-chowdhury",
         name: "Jamim Hossain Chowdhury",
         position: "Lecturer",
-        image: "img/Jamim Hossain Chowdhury.jpg",
+        image: "/images/10001.jpeg",
       },
       {
+        id: "md-arifur-rahman",
         name: "Md. Arifur Rahman",
         position: "Lecturer",
-        image: "img/Md. Arifur Rahman.jpg",
+        image: "/images/10001.jpeg",
       },
       {
+        id: "moumita-kabir",
         name: "Moumita Kabir",
         position: "Lecturer (on study leave)",
-        image: "img/Moumita Kabir.jpg",
+        image: "/images/10001.jpeg",
       },
       {
+        id: "shamim-ahmed",
         name: "Shamim Ahmed",
         position: "Lecturer",
-        image: "img/shamim ahmed.avif",
+        image: "/images/10001.jpeg",
       },
       {
+        id: "zannatul-ferdous-zannat",
         name: "Zannatul Ferdous Zannat",
         position: "Lecturer",
-        image: "img/Zannatul Ferdous Zannat.jpg",
+        image: "/images/10001.jpeg",
       },
     ],
   },
@@ -40,24 +46,28 @@ const departments = [
     name: "Department of Business Administration",
     faculty: [
       {
+        id: "md-abdur-rashid",
         name: "Md Abdur Rashid",
         position: "Associate Professor, Department Head",
-        image: "img/Md Abdur Rashid.jpg",
+        image: "/images/10001.jpeg",
       },
       {
+        id: "md-hafizul-islam",
         name: "Md. Hafizul Islam",
         position: "Lecturer",
-        image: "img/Md. Hafizul Islam.jpg",
+        image: "/images/10001.jpeg",
       },
       {
+        id: "abdullah-bin-seraj",
         name: "Abdullah Bin Seraj",
         position: "Lecturer",
-        image: "img/Abdullah Bin Seraj.jpg",
+        image: "/images/10001.jpeg",
       },
       {
+        id: "sadia-ahmed-urmi",
         name: "Sadia Ahmed Urmi",
         position: "Lecturer",
-        image: "img/Sadia Ahmed Urmi.jpg",
+        image: "/images/10001.jpeg",
       },
     ],
   },
@@ -66,19 +76,22 @@ const departments = [
     name: "Department of English",
     faculty: [
       {
+        id: "imrose-afrine",
         name: "Imrose Afrine",
         position: "Lecturer",
-        image: "img/Imrose Afrine.jpg",
+        image: "/images/10001.jpeg",
       },
       {
+        id: "md-mahbub-alam-khan",
         name: "Md. Mahbub Alam Khan",
         position: "Lecturer",
-        image: "img/Md. Mahbub Alam Khan.jpg",
+        image: "/images/10001.jpeg",
       },
       {
+        id: "zinat-alfaz-pinky",
         name: "Zinat Alfaz Pinky",
         position: "Lecturer",
-        image: "img/Zinat Alfaz Pinky.jpg",
+        image: "/images/10001.jpeg",
       },
     ],
   },
@@ -87,11 +100,13 @@ const departments = [
     name: "Department of Economics",
     faculty: [
       {
+        id: "nawazeesh-muhammad-ali",
         name: "Nawazeesh Muhammad Ali",
         position: "Lecturer",
-        image: "img/Nawazeesh Muhammad Ali.jpg",
+        image: "/images/10001.jpeg",
       },
     ],
   },
 ];
+
 export default departments;
