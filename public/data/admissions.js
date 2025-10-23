@@ -99,14 +99,23 @@ const admissionsData = {
       id: "international",
       label: "International Students",
       title: "International Student Admissions",
+      applicationProcess:
+        "The application process for international students follows the same general steps as for domestic students, with additional documentation requirements and an extended timeline to accommodate visa processing.",
       intro:
-        "USET welcomes international students from around the world, offering a supportive and culturally inclusive environment.",
+        "USET welcomes applications from international students who are interested in experiencing Bangladesh's unique approach to skill-based education. Our international student program provides a supportive environment for students from diverse backgrounds.",
       requirements: [
-        "Official transcripts translated into English",
-        "IELTS 6.0 or equivalent",
-        "Valid passport and student visa",
-        "Proof of financial solvency",
-        "Health insurance valid in Bangladesh",
+        "Academic Credentials: Official transcripts and certificates translated into English if in another language, with authentication from relevant authorities",
+        "English Proficiency: IELTS score of 6.0 or equivalent (TOEFL, PTE) for programs taught in English",
+        "Passport and Visa: Valid passport and student visa for Bangladesh",
+        "Financial Statement: Proof of sufficient funds to cover tuition and living expenses",
+        "Health Insurance: Proof of health insurance valid in Bangladesh",
+      ],
+      support: [
+        "Assistance with accommodation arrangements",
+        "Orientation program specifically for international students",
+        "Cultural adaptation support",
+        "Academic advising and tutoring",
+        "Visa extension assistance",
       ],
       sidebar: {
         dates: [

@@ -8,11 +8,7 @@
       "name": "Admissions",
       "submenu": [
         { "title": "Online Admission", "href": "/admission" },
-        { "title": "Tuition & Fees", "href": "/Tuition-Fees" },
-        {
-          "title": "International Students",
-          "href": "/international-students"
-        },
+        { "title": "Tuition & Fees", "href": "/tuition-fees" },
         { "title": "Admission Process", "href": "/admission-policy" }
       ]
     },
