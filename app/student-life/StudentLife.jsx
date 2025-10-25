@@ -101,7 +101,7 @@ export default function StudentLifePage() {
             (tab, index) => (
               <Tab key={tab} className="list-none ">
                 <motion.button
-                  className={`relative px-6 py-3 font-medium text-xl  transition-all duration-300 ${
+                  className={`relative px-6 py-3 font-medium text-xl  transition-all cursor-pointer duration-300 ${
                     activeTab === index
                       ? "border-b-4 border-b-indigo-600 font-bold text-indigo-700"
                       : "bg-white text-gray-700 "
@@ -129,11 +129,8 @@ export default function StudentLifePage() {
         {/* Overview Tab */}
         <TabPanel>
           {/* Stats */}
-          <section
-            id="stats-section"
-            className="bg-gradient-to-r from-indigo-600 to-purple-600 py-16 rounded-2xl mb-16"
-          >
-            <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-6 px-6">
+          <section id="stats-section" className="  mb-16">
+            <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-6 px-6 bg-brandblue py-16 rounded-2xl">
               {stats.map((s, i) => (
                 <motion.div
                   key={i}
@@ -147,6 +144,7 @@ export default function StudentLifePage() {
                       <CountUp
                         end={parseInt(s.value)}
                         duration={2.5}
+                        separator=""
                         suffix="+"
                       />
                     )}
@@ -164,9 +162,9 @@ export default function StudentLifePage() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className={`flex flex-col lg:flex-row ${
+              className={`flex flex-col lg:flex-row max-w-7xl mx-auto ${
                 i % 2 === 1 ? "lg:flex-row-reverse" : ""
-              } items-center gap-10 mb-16`}
+              }  gap-10 mb-16`}
             >
               <div className="lg:w-1/2">
                 <Image
@@ -318,47 +316,64 @@ export default function StudentLifePage() {
       </Tabs>
 
       {/* Testimonials Carousel */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-12">
-            {testimonials.title}
-          </h2>
+      <section className="py-24 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/90 via-white to-purple-50/90"></div>
+
+        <div className="max-w-7xl mx-auto px-6 relative">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-600 mb-4 font-semibold mb-4">
+              {testimonials.title}
+            </h2>
+          </div>
+
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
-            spaceBetween={30}
+            spaceBetween={40}
             slidesPerView={1}
-            navigation
+            loop={true}
             pagination={{ clickable: true }}
-            autoplay={{ delay: 5000 }}
+            autoplay={{
+              delay: 5000,
+              disableOnInteraction: false,
+            }}
+            speed={800}
             breakpoints={{
               640: { slidesPerView: 2 },
               1024: { slidesPerView: 3 },
             }}
+            className="!pb-16"
           >
             {testimonials.quotes.map((quote, i) => (
               <SwiperSlide key={i}>
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5 }}
-                  className="bg-white p-8 rounded-2xl shadow-lg"
-                >
-                  <div className="flex flex-col items-center">
-                    <Image
-                      src={quote.image}
-                      alt={quote.name}
-                      width={80}
-                      height={80}
-                      className="rounded-full mb-4"
-                    />
-                    <p className="text-gray-700 italic mb-4">
-                      &quot;{quote.text}&quot;
+                <div className="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition-shadow duration-300">
+                  <div className="flex flex-col items-center text-center">
+                    <div className="relative mb-4">
+                      <div className="relative p-1 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500">
+                        <div className="p-1 rounded-full bg-white">
+                          <Image
+                            src={quote.image}
+                            alt={quote.name}
+                            width={100}
+                            height={100}
+                            className="rounded-full object-cover w-24 h-24"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <p className="text-gray-700 text-lg leading-relaxed mb-6">
+                      {quote.text}
                     </p>
-                    <h4 className="font-semibold text-indigo-600">
+
+                    <h4 className="font-bold text-brandblue text-xl">
                       {quote.name}
                     </h4>
+                    <p className="text-gray-500">{quote.position}</p>
+                    <span className="text-sm font-medium text-gray-500">
+                      Batch {quote.batch || "2023"}
+                    </span>
                   </div>
-                </motion.div>
+                </div>
               </SwiperSlide>
             ))}
           </Swiper>
@@ -366,7 +381,7 @@ export default function StudentLifePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-24 bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-center">
+      <section className="relative py-24 bg-brandblue text-white text-center">
         <div className="max-w-3xl mx-auto px-6 relative z-10">
           <h2 className="text-4xl font-extrabold mb-4 leading-tight">
             {cta.title}

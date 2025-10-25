@@ -2,7 +2,7 @@ const studentLifeData = {
   hero: {
     title: "Life at USET",
     subtitle:
-      "xperience a vibrant campus community with diverse activities, clubs, and opportunities for personal growth.",
+      "Experience a vibrant campus community with diverse activities, clubs, and opportunities for personal growth.",
     image: "/images/campus.jpg",
   },
 
@@ -19,21 +19,21 @@ const studentLifeData = {
       description:
         "Join diverse clubs and organizations that match your interests and help develop leadership skills.",
       subcategories: ["Cultural Clubs", "Academic Societies", "Sports Teams"],
-      image: "/img/student-organizations.jpg",
+      image: "/images/campus r.jpg",
     },
     {
       title: "Campus Activities",
       description:
         "Engage in exciting events and activities throughout the academic year.",
       subcategories: ["Cultural Events", "Tech Festivals", "Workshops"],
-      image: "/img/campus-activities.jpg",
+      image: "/images/campus r.jpg",
     },
     {
       title: "Campus Facilities",
       description:
         "Access modern facilities designed to enhance your university experience.",
       subcategories: ["Modern Library", "Sports Complex", "Student Lounges"],
-      image: "/img/campus-facilities.jpg",
+      image: "/images/campus r.jpg",
     },
   ],
 
@@ -205,14 +205,28 @@ const studentLifeData = {
     title: "What Our Students Say",
     quotes: [
       {
-        name: "Aisha Rahman",
-        text: "USET gave me the confidence and skills to turn my ideas into reality. The clubs and mentors here changed my life.",
-        image: "/img/student1.jpg",
+        name: "Rakib Ahmed",
+        batch: "Computer Science, Year 3",
+        text: "USET’s innovative curriculum and supportive community helped me excel in my tech career.",
+        image: "/images/s2.jpg",
       },
       {
-        name: "Samiul Hasan",
-        text: "Being part of student life at USET means endless opportunities — from innovation labs to cultural festivals.",
-        image: "/img/student2.jpg",
+        name: "Mehedi Hasan",
+        batch: "Engineering, Year 2",
+        text: "The faculty’s mentorship and hands-on projects prepared me for real-world challenges.",
+        image: "/images/s3.png",
+      },
+      {
+        name: "Tanvir Hossain",
+        batch: "Data Science, Year 4",
+        text: "USET’s cutting-edge resources made my journey in data science truly rewarding.",
+        image: "/images/s4.jpg",
+      },
+      {
+        name: "Nafisa Rahman",
+        batch: "Software Engineering, Year 3",
+        text: "The collaborative environment at USET fueled my passion for software development.",
+        image: "/images/Md. Arifur Rahman.jpg",
       },
     ],
   },
