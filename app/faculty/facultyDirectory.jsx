@@ -120,7 +120,7 @@ export default function FacultyDirectory() {
         </div>
 
         {/* Faculty Grid */}
-        <div className="mt-16 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="mt-16 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-4 md:px-0">
           {filteredFaculty.map((member) => (
             <Link
               key={member.id}

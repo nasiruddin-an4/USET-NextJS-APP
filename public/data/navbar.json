@@ -26,12 +26,12 @@
       "submenu": [
         { "title": "All News & Events", "href": "/news-events" },
         { "title": "News", "href": "/news-events?type=news" },
-        { "title": "Events", "href": "/news-events?type=event" }
+        { "title": "Events", "href": "/news-events#events" }
       ]
     },
     { "name": "Alumni", "href": "/alumni" },
     { "name": "Notices", "href": "/notices" },
     { "name": "Contact", "href": "/contact" }
   ],
-  "cta": { "name": "Apply Now", "href": "/programs" }
+  "cta": { "name": "Apply Now", "href": "/admission-policy" }
 }
