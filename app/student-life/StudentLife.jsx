@@ -37,7 +37,7 @@ export default function StudentLifePage() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) setIsVisible(true);
+        if (entry?.isIntersecting) setIsVisible(true);
       },
       { threshold: 0.1 }
     );
@@ -63,7 +63,7 @@ export default function StudentLifePage() {
       {/* Hero Section */}
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
-          src={hero.image}
+          src={hero?.image}
           alt="Student Life"
           fill
           className="object-cover brightness-75"
@@ -77,7 +77,7 @@ export default function StudentLifePage() {
             transition={{ duration: 0.8 }}
             className="text-5xl sm:text-6xl font-bold mb-4 text-white"
           >
-            {hero.title}
+            {hero?.title}
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -85,7 +85,7 @@ export default function StudentLifePage() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="max-w-2xl mx-auto text-lg text-gray-200"
           >
-            {hero.subtitle}
+            {hero?.subtitle}
           </motion.p>
         </div>
       </section>
@@ -142,21 +142,21 @@ export default function StudentLifePage() {
                   <h3 className="text-4xl font-extrabold">
                     {isVisible && (
                       <CountUp
-                        end={parseInt(s.value)}
+                        end={parseInt(s?.value)}
                         duration={2.5}
                         separator=""
                         suffix="+"
                       />
                     )}
                   </h3>
-                  <p className="text-indigo-100 mt-2">{s.label}</p>
+                  <p className="text-indigo-100 mt-2">{s?.label}</p>
                 </motion.div>
               ))}
             </div>
           </section>
 
           {/* Campus Sections */}
-          {sections.map((item, i) => (
+          {sections?.map((item, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 20 }}
@@ -168,8 +168,8 @@ export default function StudentLifePage() {
             >
               <div className="lg:w-1/2">
                 <Image
-                  src={item.image}
-                  alt={item.title}
+                  src={item?.image}
+                  alt={item?.title}
                   width={600}
                   height={400}
                   className="rounded-2xl object-cover shadow-lg"
@@ -177,11 +177,11 @@ export default function StudentLifePage() {
               </div>
               <div className="lg:w-1/2">
                 <h2 className="text-3xl font-bold text-gray-900 mb-3">
-                  {item.title}
+                  {item?.title}
                 </h2>
-                <p className="text-gray-600 mb-4">{item.description}</p>
+                <p className="text-gray-600 mb-4">{item?.description}</p>
                 <ul className="list-disc pl-5 text-gray-700 space-y-1">
-                  {item.subcategories.map((sub, j) => (
+                  {item?.subcategories.map((sub, j) => (
                     <li key={j}>{sub}</li>
                   ))}
                 </ul>
@@ -193,7 +193,7 @@ export default function StudentLifePage() {
         {/* Clubs Tab */}
         <TabPanel>
           <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-            {clubs.list.map((club, i) => (
+            {clubs?.list?.map((club, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
@@ -203,8 +203,8 @@ export default function StudentLifePage() {
               >
                 <div className="relative h-56 overflow-hidden">
                   <Image
-                    src={club.image}
-                    alt={club.name}
+                    src={club?.image}
+                    alt={club?.name}
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-700"
                   />
@@ -348,7 +348,7 @@ export default function StudentLifePage() {
                 <div className="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition-shadow duration-300">
                   <div className="flex flex-col items-center text-center">
                     <div className="relative mb-4">
-                      <div className="relative p-1 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500">
+                      <div className="relative p-1 rounded-full bg-gradient-to-r from-brandblue to-blue-500">
                         <div className="p-1 rounded-full bg-white">
                           <Image
                             src={quote.image}

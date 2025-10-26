@@ -149,10 +149,10 @@ export default function FacultyDirectory() {
 
               {/* Info Section */}
               <div className="p-6">
-                <h3 className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 transition-colors duration-300">
+                <h3 className="text-lg font-semibold text-brandblue transition-colors duration-300">
                   {member.name}
                 </h3>
-                <p className="mt-1 text-sm font-medium text-indigo-600">
+                <p className="mt-1 text-sm font-medium text-gray-600">
                   {member.position}
                 </p>
                 <p className="mt-1 text-sm text-gray-500">

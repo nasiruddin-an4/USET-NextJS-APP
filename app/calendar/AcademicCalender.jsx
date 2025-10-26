@@ -39,7 +39,7 @@ export default function AcademicsPage() {
         {/* Academic Vision Section */}
         <section className="container mx-auto px-6 py-16 flex flex-col md:flex-row items-center gap-16">
           <div className="flex-1">
-            <h2 className="text-2xl font-bold text-green-700 mb-4">
+            <h2 className="text-2xl font-bold text-brandblue mb-4">
               Our Academic Vision
             </h2>
             <p className="text-gray-700 mb-4 leading-relaxed">
