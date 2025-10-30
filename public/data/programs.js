@@ -11,7 +11,7 @@ const faculties = [
         duration: "4 Years",
         credits: 140,
         description:
-          "Our BBA program provides students with a solid foundation in business principles with specialized practical training in key areas including management, marketing, finance, and entrepreneurship.",
+          "The Bachelor of Business Administration (BBA) program is designed to develop future business leaders with a strong foundation in modern management principles and real-world problem-solving skills. Students gain comprehensive knowledge in management, marketing, finance, human resources, and entrepreneurship, along with hands-on experience through internships, case studies, and business simulations. This program prepares graduates to thrive in a competitive global marketplace — equipped with analytical thinking, leadership, and communication skills essential for success in diverse business environments.",
         career_paths: [
           "Business Analyst",
           "Marketing Manager",

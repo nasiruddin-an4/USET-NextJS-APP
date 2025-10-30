@@ -134,7 +134,7 @@ export default function TuitionFeesPage() {
               Scholarships & Waivers
             </h2>
 
-            <div className="space-y-4 ">
+            <div className="space-y-4 bg-white">
               {scholarships.map((scholar, index) => {
                 const isOpen = openIndex === index;
                 return (
