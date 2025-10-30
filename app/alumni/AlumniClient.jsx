@@ -16,12 +16,17 @@ import {
   ChevronRight,
   Filter,
   Building2,
+  Users,
 } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import alumniData from "@/public/data/Alumni";
+import Link from "next/link";
+import AlumniUpdateForm from "./components/AlumniUpdateForm";
+import AlumniBenefits from "./components/AlumniBenefits";
+import AlumniSuccessStory from "./components/AlumniSuccessStory";
 
-const alumniClient = () => {
+const AlumniClient = () => {
   // === States ===
   const [searchTerm, setSearchTerm] = useState("");
   const [sortOption, setSortOption] = useState("name");
@@ -219,56 +224,59 @@ const alumniClient = () => {
         {currentAlumni.length > 0 ? (
           <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             {currentAlumni.map((alumni, idx) => (
-              <motion.div
-                key={alumni.id}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: idx * 0.1, duration: 0.3 }}
-                className="bg-white p-4 shadow overflow-hidden group transition-all duration-300 ease-in-out hover:shadow-xl"
-              >
-                {/* Image Container */}
-                <div className="relative h-72 w-full ">
-                  <Image
-                    src={alumni.image}
-                    alt={alumni.name}
-                    fill
-                    className="object-cover object-center rounded-sm "
-                  />
-                </div>
+              <Link href={`/alumni/${alumni.id}`} key={alumni.id}>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: idx * 0.1, duration: 0.3 }}
+                  className="bg-white p-4 shadow overflow-hidden group transition-all duration-300 ease-in-out hover:shadow-xl cursor-pointer"
+                >
+                  {/* Image Container */}
+                  <div className="relative h-72 w-full ">
+                    <Image
+                      src={alumni.image}
+                      alt={alumni.name}
+                      fill
+                      className="object-cover object-center rounded-sm "
+                    />
+                  </div>
 
-                {/* Content Area */}
-                <div className="py-5 px-4">
-                  {/* Name */}
-                  <h3
-                    className="text-lg font-bold text-gray-900 truncate border-b border-gray-200 pb-1 mb-2 transition-transform duration-500 ease-in-out group-hover:translate-x-2"
-                    title={alumni.name}
-                  >
-                    {alumni.name}
-                    {", "} {/* Department & Batch */}
-                    <span className="text-sm font-medium text-gray-600">
-                      {alumni.department.toUpperCase()} - {alumni.batch}
-                    </span>
-                  </h3>
+                  {/* Content Area */}
+                  <div className="py-5 px-4">
+                    {/* Name */}
+                    <h3
+                      className="text-lg font-bold text-gray-900 truncate border-b border-gray-200 pb-1 mb-2 transition-transform duration-500 ease-in-out group-hover:translate-x-2"
+                      title={alumni.name}
+                    >
+                      {alumni.name}
+                      {", "} {/* Department & Batch */}
+                      <span className="text-sm font-medium text-gray-600">
+                        {alumni.department.toUpperCase()} - {alumni.batch}
+                      </span>
+                    </h3>
 
-                  {/* Job Info */}
-                  <div className="space-y-2">
-                    {/* Position */}
-                    <div className="flex items-start">
-                      <BriefcaseIcon className="h-4 w-4 text-blue-600 mr-2 mt-0.5 flex-shrink-0" />
-                      {/* Possition */}
-                      <p className="text-sm font-semibold text-gray-800">
-                        {alumni.currentPosition}
-                      </p>
-                    </div>
+                    {/* Job Info */}
+                    <div className="space-y-2">
+                      {/* Position */}
+                      <div className="flex items-start">
+                        <BriefcaseIcon className="h-4 w-4 text-blue-600 mr-2 mt-0.5 flex-shrink-0" />
+                        {/* Possition */}
+                        <p className="text-sm font-semibold text-gray-800">
+                          {alumni.currentPosition}
+                        </p>
+                      </div>
 
-                    {/* Company */}
-                    <div className="flex items-start">
-                      <Building2 className="h-4 w-4 text-gray-400 mr-2 mt-0.5 flex-shrink-0" />
-                      <p className="text-sm text-gray-600">{alumni.company}</p>
+                      {/* Company */}
+                      <div className="flex items-start">
+                        <Building2 className="h-4 w-4 text-gray-400 mr-2 mt-0.5 flex-shrink-0" />
+                        <p className="text-sm text-gray-600">
+                          {alumni.company}
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </motion.div>
+                </motion.div>
+              </Link>
             ))}
           </div>
         ) : (
@@ -321,9 +329,35 @@ const alumniClient = () => {
             </button>
           </div>
         )}
+
+        {/* Alumni Benefits Section */}
+        <div>
+          <AlumniBenefits />
+        </div>
+
+        <div>
+          <AlumniSuccessStory />
+        </div>
+
+        {/* Update Your Information Section */}
+        <div className="bg-gradient-to-r from-blue-50 to-indigo-100 rounded-xl shadow p-8 text-center mt-10">
+          <h2 className="text-2xl md:text-3xl font-bold text-brandblue">
+            Dear Alumni, Keep Your Information Updated!
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto mb-4">
+            Help us stay connected by updating your latest professional and
+            academic details.
+          </p>
+          <Link
+            href="/alumni/update"
+            className="inline-block bg-brandblue text-white px-6 py-3 rounded-full font-medium transition-all hover:bg-blue-800 hover:scale-105"
+          >
+            Update Your Information →
+          </Link>
+        </div>
       </div>
     </div>
   );
 };
 
-export default alumniClient;
+export default AlumniClient;

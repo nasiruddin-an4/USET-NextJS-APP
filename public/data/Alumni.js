@@ -1,6 +1,36 @@
 // alumniData.js
 const alumniData = [
   {
+    id: "1",
+    name: "John Doe",
+    image: "/images/alumni/john-doe.jpg",
+    department: "CSE",
+    batch: 2018,
+    program: "B.Sc in Computer Science & Engineering",
+    currentPosition: "Senior Software Engineer",
+    company: "Google",
+    email: "john.doe@example.com",
+    phone: "+880 1234567890",
+    linkedin: "linkedin.com/in/johndoe",
+    location: "San Francisco, USA",
+    experience: [
+      {
+        position: "Senior Software Engineer",
+        company: "Google",
+        duration: "2020 - Present",
+      },
+      {
+        position: "Software Engineer",
+        company: "Microsoft",
+        duration: "2018 - 2020",
+      },
+    ],
+    achievements: [
+      "Led development of key Google Cloud features",
+      "Published 2 research papers in IEEE",
+    ],
+  },
+  {
     id: "alumni-1",
     name: "Ahsan Kabir",
     image: "/images/profile.webp",
