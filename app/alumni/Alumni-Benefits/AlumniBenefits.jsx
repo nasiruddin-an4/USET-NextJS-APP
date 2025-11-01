@@ -46,17 +46,14 @@ const benefits = [
 
 const AlumniBenefits = () => {
   return (
-    <section className="mt-20 bg-gray-50 py-12">
+    <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 md:px-8">
         <h2 className="text-3xl font-bold text-center text-brandblue mb-8">
           Alumni Benefits
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => (
-            <div
-              key={index}
-              className="bg-white p-6 rounded-lg shadow"
-            >
+            <div key={index} className="bg-white p-6 rounded-lg shadow">
               <div className="text-brandblue mb-4">{benefit.icon}</div>
               <h3 className="text-xl font-semibold mb-2">{benefit.title}</h3>
               <p className="text-gray-600">{benefit.description}</p>

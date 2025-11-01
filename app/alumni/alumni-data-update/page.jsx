@@ -3,56 +3,51 @@ import React, { useState } from "react";
 
 export default function AlumniUpdatePage() {
   const [formData, setFormData] = useState({
-    isAlumni: "", // ✅ controlled
-    fullName: "", // ✅ controlled
-    gender: "", // ✅ controlled
-    bloodGroup: "", // ✅ controlled
-    dob: "", // ✅ controlled
-    whatsapp: "", // ✅ controlled
-    altPhone: "", // ✅ controlled
-    diuEmail: "", // ✅ controlled
-    personalEmail: "", // ✅ controlled
-    presentAddress: "", // ✅ controlled
-    presentCountry: "", // ✅ controlled
-    permanentAddress: "", // ✅ controlled
-    studentId: "", // ✅ controlled
-    department: "", // ✅ controlled
-    passingYear: "", // ✅ controlled
-    convocation: "", // ✅ controlled
-    degreeLevel: "", // ✅ controlled
-    secondDegreeStudentId: "", // ✅ controlled
-    secondDegreeDepartment: "", // ✅ controlled
-    secondDegreePassingYear: "", // ✅ controlled
-    secondDegreeConvocation: "", // ✅ controlled
-    currentJobStatus: "", // ✅ controlled
-    organization: "", // ✅ controlled
-    position: "", // ✅ controlled
-    higherEducation: "", // ✅ controlled
-    careerSupport: "", // ✅ controlled
-    contribution: "", // ✅ controlled
-    eventsParticipation: "", // ✅ controlled
-    awards: "", // ✅ controlled
-    extraCurricular: "", // ✅ controlled
-    linkedIn: "", // ✅ controlled
-    facebook: "", // ✅ controlled
-    otherLink: "", // ✅ controlled
-    formalImage: null, // ✅ file input is controlled with null
-    remarks: "", // ✅ controlled
+    isAlumni: "", //   controlled
+    fullName: "", //   controlled
+    gender: "", //   controlled
+    bloodGroup: "", //   controlled
+    dob: "", //   controlled
+    whatsapp: "", //   controlled
+    altPhone: "", //   controlled
+    usetEmail: "", //   controlled
+    personalEmail: "", //   controlled
+    presentAddress: "", //   controlled
+    presentCountry: "", //   controlled
+    permanentAddress: "", //   controlled
+    studentId: "", //   controlled
+    department: "", //   controlled
+    passingYear: "", //   controlled
+    convocation: "", //   controlled
+    degreeLevel: "", //   controlled
+    currentJobStatus: "", //   controlled
+    organization: "", //   controlled
+    position: "", //   controlled
+    higherEducation: "", //   controlled
+    careerSupport: "", //   controlled
+    contribution: "", //   controlled
+    eventsParticipation: "", //   controlled
+    awards: "", //   controlled
+    extraCurricular: "", //   controlled
+    linkedIn: "", //   controlled
+    facebook: "", //   controlled
+    otherLink: "", //   controlled
+    formalImage: null, //   file input is controlled with null
+    remarks: "", //   controlled
   });
 
   const handleChange = (e) => {
     const { name, value, files } = e.target;
-    if (files) {
-      setFormData({ ...formData, [name]: files[0] });
-    } else {
-      setFormData({ ...formData, [name]: value });
-    }
+    setFormData((prev) => ({
+      ...prev,
+      [name]: files ? files[0] : value ?? "",
+    }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
-    alert("✅ Your information has been submitted successfully!");
+    alert("Your information has been submitted successfully!");
   };
 
   return (
@@ -308,63 +303,6 @@ export default function AlumniUpdatePage() {
                 <option value="graduate">Graduate</option>
                 <option value="both">Both</option>
               </select>
-            </div>
-          </div>
-
-          {/* Section 3: Second Degree */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div>
-              <label className="block text-gray-700 font-medium mb-1">
-                Student ID for 2nd Degree
-              </label>
-              <input
-                type="text"
-                name="secondDegreeStudentId"
-                value={formData.secondDegreeStudentId}
-                onChange={handleChange}
-                className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-brandblue outline-none"
-              />
-            </div>
-
-            <div>
-              <label className="block text-gray-700 font-medium mb-1">
-                What was your department for your 2nd degree?
-              </label>
-              <input
-                type="text"
-                name="secondDegreeDepartment"
-                value={formData.secondDegreeDepartment}
-                onChange={handleChange}
-                className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-brandblue outline-none"
-              />
-            </div>
-
-            <div>
-              <label className="block text-gray-700 font-medium mb-1">
-                Passing Year for 2nd Degree
-              </label>
-              <input
-                type="number"
-                name="secondDegreePassingYear"
-                value={formData.secondDegreePassingYear}
-                onChange={handleChange}
-                min="2000"
-                max="2030"
-                className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-brandblue outline-none"
-              />
-            </div>
-
-            <div>
-              <label className="block text-gray-700 font-medium mb-1">
-                In which convocation did you complete your 2nd degree?
-              </label>
-              <input
-                type="text"
-                name="secondDegreeConvocation"
-                value={formData.secondDegreeConvocation}
-                onChange={handleChange}
-                className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-brandblue outline-none"
-              />
             </div>
           </div>
 

@@ -29,7 +29,14 @@
         { "title": "Events", "href": "/news-events#events" }
       ]
     },
-    { "name": "Alumni", "href": "/alumni" },
+    {
+      "name": "Alumni",
+      "submenu": [
+        { "title": "All Alumni", "href": "/alumni" },
+        { "title": "Success Stories", "href": "/alumni/success-stories" },
+        { "title": "Alumni Benefits", "href": "/alumni/Alumni-Benefits" }
+      ]
+    },
     { "name": "Notices", "href": "/notices" },
     { "name": "Contact", "href": "/contact" }
   ],

@@ -22,9 +22,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import alumniData from "@/public/data/Alumni";
 import Link from "next/link";
-import AlumniUpdateForm from "./components/AlumniUpdateForm";
-import AlumniBenefits from "./components/AlumniBenefits";
-import AlumniSuccessStory from "./components/AlumniSuccessStory";
 
 const AlumniClient = () => {
   // === States ===
@@ -330,14 +327,9 @@ const AlumniClient = () => {
           </div>
         )}
 
-        {/* Alumni Benefits Section */}
-        <div>
-          <AlumniBenefits />
-        </div>
-
-        <div>
-          <AlumniSuccessStory />
-        </div>
+        {/* <div>
+          <AlumniCommittee />
+        </div> */}
 
         {/* Update Your Information Section */}
         <div className="bg-gradient-to-r from-blue-50 to-indigo-100 rounded-xl shadow p-8 text-center mt-10">
@@ -349,7 +341,7 @@ const AlumniClient = () => {
             academic details.
           </p>
           <Link
-            href="/alumni/update"
+            href="/alumni/alumni-data-update"
             className="inline-block bg-brandblue text-white px-6 py-3 rounded-full font-medium transition-all hover:bg-blue-800 hover:scale-105"
           >
             Update Your Information →
